@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>BancoAPP</title>
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+       <!-- <script type="text/javascript" src=""-->
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+                        <!-- Top Bar Start -->
+                        <div class="top-bar">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="logo">
+                                            <a href="index.html">
+                                                <h1>BancoAPP </h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Top Bar End -->
+            
+                        <!-- Nav Bar Start -->
+                        <div class="nav-bar">
+                            <div class="container-fluid">
+                                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                                    <a href="#" class="navbar-brand">MENU</a>
+                                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+            
+                                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                        <div class="navbar-nav mr-auto">
+                                            <a href="index.html" class="nav-item nav-link ">Principal</a>
+                                            <a href="about.html" class="nav-item nav-link">Cuentas</a>
+                                            <a href="service.html" class="nav-item nav-link active">Transacciones</a>
+                                            <a href="team.html" class="nav-item nav-link">Tarjetas de credito</a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Nav Bar End -->          
+            
+
+            <!-- FAQs Start -->
+            <div class="contact wow fadeInUp">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2>Consulta de Saldos</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <form action="TransConsultaSaldo.php" method="post" name="sentMessage" id="ConsultaSaldo" novalidate="novalidate">
+                                    <div class="control-group">
+                                        <input type="text" name="CodTarjetaConsulta" class="form-control" id="CodConsultaTarjeta" placeholder="Ingresar Numero de tarjeta" required="required" data-validation-required-message="Ingresar codigo de cuenta" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <select class="form-select" type="month" name="month" aria-placeholder="Selecionar Mes" aria-label="Default select example">
+                                            <option>Seleccionar Mes</option>
+                                            <option value="1">Enero</option>
+                                            <option value="2">Febrero</option>
+                                            <option value="3">Marzo</option>
+                                            <option value="4">Abril</option>
+                                            <option value="5">Mayo</option>
+                                            <option value="6">Junio</option>
+                                            <option value="7">Julio</option>
+                                            <option value="8">Agosto</option>
+                                            <option value="9">Septiembre</option>
+                                            <option value="10">Octubre</option>
+                                            <option value="11">Noviembre</option>
+                                            <option value="12">Diciembre</option>
+                                          </select>
+                                          <p class="help-block text-danger"></p>
+                                        </div> 
+                                    <div class="row" >
+                                        <div>
+                                            <button class="btn" type="submit" id="BloqBtnA">Consultar Saldo</button>
+                                        </div>
+                                    </div>        
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQs End -->
+
+            
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#navbar').load('../com/navbar.php')
+        $('#tabla').load('../com'/tablatipos.php)
+    });
+</script>
